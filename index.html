@@ -77,23 +77,32 @@
     </ul>
 </section>
 
-   <section id="reservations" class="reservations" >
-  <!--  Book a table
-
-    Name _
-    Number of guests _
-    Date & time _
-    Your email _
-
-    Book a table
-
-    I agree with the terms of use
-
-
-    Name Surname
-    1-8
-    email@email.com
-   -->
+   <section id="reservation" class="reservation" >
+    <h2 class="reservations__title">Book a table</h2>
+      <form class="reservation__form form">
+       <fieldset class="form__fieldset">
+          <label for="name-input" class="form__label">
+            Name *
+            <input type="text" id="name-input" class="form__input" placeholder="Name Surname" required>
+          </label>
+          <label for="number-input" class="form__label">
+            Number of guests *
+            <input type="number" id="number-input" class="form__input" placeholder="1-8" min="1" max="8" required>
+          </label>
+          <label for="datetime-local-input" class="form__label">
+            Date & time *
+            <input type="datetime-local" id="datetime-local-input" class="form__input" required>
+          </label>
+          <label for="email-input" class="form__label">
+            Your email *
+            <input type="email" id="email-input" class="form__input" placeholder="email@email.com" required>
+          </label>
+        </fieldset>
+       <button class="form__button">Book a table</button>
+       <label for="checkbox-input" class="form__checkbox">
+          <input type="checkbox" id="checkbox-input" class="form__checkbox" placeholder="Name Surname" required> I agree with the terms of use
+      </label>
+      </form>
 </section>
    <section id="menu" class="menu" >
     <!--

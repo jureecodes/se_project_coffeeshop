@@ -136,3 +136,9 @@
   font-size: 20px;
   line-height: 30px;
 }
+
+.reservation {
+  color: #000;
+  background: center / cover no-repeat #D9E7FF url('../images/background_reservation.svg');
+  padding: 100px 80px 215px;
+}
