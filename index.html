@@ -26,7 +26,7 @@
           <a href="#recipes" class="nav__link">Recipes</a>
         </li>
         <li>
-          <a href="#reservations" class="nav__link">Book a table</a>
+          <a href="#reservation" class="nav__link">Book a table</a>
         </li>
         <li>
           <a href="#menu" class="nav__link">Menu</a>
@@ -78,7 +78,7 @@
 </section>
 
    <section id="reservation" class="reservation" >
-    <h2 class="reservations__title">Book a table</h2>
+    <h2 class="reservation__title">Book a table</h2>
       <form class="reservation__form form">
        <fieldset class="form__fieldset">
           <label for="name-input" class="form__label">
@@ -99,12 +99,18 @@
           </label>
         </fieldset>
        <button class="form__button">Book a table</button>
-       <label for="checkbox-input" class="form__checkbox">
-          <input type="checkbox" id="checkbox-input" class="form__checkbox" placeholder="Name Surname" required> I agree with the terms of use
-      </label>
+       <label for="checkbox-input" class="form__label form__label_type_checkbox">
+          <input
+            id="checkbox-input"
+            class="form__checkbox invisible-checkbox"
+            type="checkbox"
+
+            required><span class="visible-checkbox"></span>I agree with the terms of use
+          </label>
       </form>
-</section>
-   <section id="menu" class="menu" >
+  </section>
+
+  <section id="menu" class="menu" >
     <!--
       Menu
 
